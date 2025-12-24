@@ -33,7 +33,7 @@ header p {
 
 /* Contenido Principal */
 .content {
-    max-width: 1000px;
+    max-width: 1400px;
     margin: 40px auto;
     padding: 0 20px;
 }
@@ -89,4 +89,34 @@ tbody tr:hover {
 /* Negritas */
 strong {
     color: #111827;
+}
+
+/* Imagenes */
+img {
+    max-width: 1300px;
+    width: 100%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+.grafica-grupo {
+    max-width: 900px;
+    width: 100%;
+    display: block;
+    height: auto;
+    margin: 25px auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+}
+
+/* Footer */
+footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size: large;
 }

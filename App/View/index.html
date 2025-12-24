@@ -1,74 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Style/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Style/style.css" />
     <title>Notas De Estudiantes</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-            <h1>Students Exam Scores</h1>
-            <p>Posted by Luis Sazo</p>
-        </div>
+      <div>
+        <h1>Students Exam Scores</h1>
+        <p>Posted by Luis Sazo</p>
+      </div>
     </header>
 
     <div class="content">
-        <section>
+      <section>
         <p>
-            En este proyecto se presenta un análisis del conjunto de datos 
-            <strong>Students Exam Scores</strong>, que recopila los resultados de estudiantes
-            en Matemáticas, Lectura y Escritura. Los alumnos están organizados en 
-            cinco grupos (del Grupo A al Grupo E), lo que permite comparar el desempeño
-            académico entre ellos de una forma clara y visual. 
+          En este proyecto se presenta un análisis del conjunto de datos
+          <strong>Students Exam Scores</strong>, que recopila los resultados de
+          estudiantes en Matemáticas, Lectura y Escritura. Los alumnos están
+          organizados en cinco grupos (del Grupo A al Grupo E), lo que permite
+          comparar el desempeño académico entre ellos de una forma clara y
+          visual.
         </p>
 
-         <p>
-            A partir del uso de Python y herramientas de visualización, se generaron
-            distintas gráficas que ayudan a observar cómo se distribuyen las calificaciones, 
-            identificar diferencias entre los grupos y comprender mejor los patrones
-            generales en los resultados de los exámenes.
+        <p>
+          A partir del uso de Python y herramientas de visualización, se
+          generaron distintas gráficas que ayudan a observar cómo se distribuyen
+          las calificaciones, identificar diferencias entre los grupos y
+          comprender mejor los patrones generales en los resultados de los
+          exámenes.
         </p>
-    </section>
+      </section>
 
-    <section>
-        <h2>Datos Calculados</h2>
+      <section>
+        <h2>Número de alumnos por grupo</h2>
 
         <table>
-            <thead>
-                <tr>
-                    <th>Grupo</th>
-                    <th>Cantidad De Alumnos</th>
-                </tr>
-            </thead>
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Cantidad De Alumnos</th>
+            </tr>
+          </thead>
 
-            <tbody>
-                <tr>
-                    <td>Grupo A</td>
-                    <td>2,359</td>
-                </tr>
-                <tr>
-                    <td>Grupo B</td>
-                    <td>6,192</td>
-                </tr>
-                <tr>
-                    <td>Grupo C</td>
-                    <td>9,816</td>
-                </tr>
-                <tr>
-                    <td>Grupo D</td>
-                    <td>7,986</td>
-                </tr>
-                <tr>
-                    <td>Grupo E</td>
-                    <td>4,288</td>
-                </tr>
-            </tbody>
+          <tbody>
+            <tr>
+              <td>Grupo A</td>
+              <td>2,359</td>
+            </tr>
+            <tr>
+              <td>Grupo B</td>
+              <td>6,192</td>
+            </tr>
+            <tr>
+              <td>Grupo C</td>
+              <td>9,816</td>
+            </tr>
+            <tr>
+              <td>Grupo D</td>
+              <td>7,986</td>
+            </tr>
+            <tr>
+              <td>Grupo E</td>
+              <td>4,288</td>
+            </tr>
+          </tbody>
         </table>
-    </section>
+      </section>
+
+      <section>
+        <h2>Promedio de notas</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Grupo</th>
+              <th>Matemáticas</th>
+              <th>Lectura</th>
+              <th>Escritura</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Grupo A</td>
+              <td>63.1</td>
+              <td>67.0</td>
+              <td>65.2</td>
+            </tr>
+            <tr>
+              <td>Grupo B</td>
+              <td>63.7</td>
+              <td>67.6</td>
+              <td>66.0</td>
+            </tr>
+            <tr>
+              <td>Grupo C</td>
+              <td>64.9</td>
+              <td>68.7</td>
+              <td>67.0</td>
+            </tr>
+            <tr>
+              <td>Grupo D</td>
+              <td>67.8</td>
+              <td>70.6</td>
+              <td>70.8</td>
+            </tr>
+            <tr>
+              <td>Grupo E</td>
+              <td>75.5</td>
+              <td>74.5</td>
+              <td>72.7</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          Se observa que el <strong>Grupo A</strong> tiene los promedios más
+          bajos en los 3 examanes, esto se puede deber a varios factores: 
+        </p>
+
+        <ul>
+            <li>Tipo de transporte en que se movilizan los estudiantes</li>
+            <li>Horas de estudio a la semana invertidas</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Dispersión de notas por materia</h2>
+        <h3>Matemáticas</h3>
+        <img 
+            src="/Gráficas/DispersiónNotasMatemáticas.png"
+            alt="Dispersión Matemáticas"    
+        >
+      </section>
+
+      <section>
+         <h3>Escritura</h3>
+        <img 
+            src="/Gráficas/DispersiónNotasEscritura.png"
+            alt="Dispersión Escritura"
+        >
+      </section>
+
+      <section>
+        <h3>Lectura</h3>
+        <img 
+            src="/Gráficas/DispersiónNotasLectura.png"
+            alt="Dispersión Lectura"
+        >
+      </section>
+
+      <section>
+        <h2>Porcentaje de transporte utilizado</h2>
+        <img src="/Gráficas/AlcancePorTransporte.png">
+        <p><strong>Conclusiones:</strong></p>
+        <ul>
+            <li>El medio de transporte no puede ser el principal factor en el <strong>Grupo A</strong>
+                para que tengan los promedios más bajos en cada materia ya que la mitad del resto de los
+                grupos también utilizan el mismo medio de transporte.
+            </li>
+            <li>De hecho el <strong>Grupo A</strong> es el que más se moviliza en medio de
+                transporte privado o propio, tomando en cuenta que también son el grupo con
+                menos estudiantes.
+            </li>
+            <li>
+                Puede que el problema radique en las horas invertidas de estudio a la semana
+            </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Número de estudiantes por grupo</h2>
+        <img 
+            src="/Gráficas/NúmeroDeEstudiantesPorGrupo.png"
+            class="grafica-grupo"
+            alt="Número de estudiantes por grupo"
+        >
+      </section>
+
+      <section>
+        <h2>Horas de estudio y alcance <strong>Grupo A</strong></h2>
+        <img 
+            src="/Gráficas/HorasEstudioGrupoA.png"
+            class="grafica-grupo" 
+            alt="Horas de estudio grupo A"
+        >
+        <img 
+            src="/Gráficas/AlcanceHorasEstudioGrupoA.png"
+            class="grafica-grupo" 
+            alt="Alcance horas grupo A"
+        >
+
+        <h3><strong>Conclusiones:</strong></h3>
+        <ul>
+            <li>Se observa que un 55.2% de la totalidad de los estudiantes
+                en el grupo A estudió entre 5 - 10 horas a la semana, podría ser
+                1 hora al día (para 3 materias es poco).
+            </li>
+            <li>
+                Solo un 16.2% (383 estudiantes) invirtieron más de 10 horas a la semana,
+                este grupo puede estar colocado por arriba de la media en cuanto a las notas obtenidas.
+            </li>
+            <li>
+                675 estudiantes equivalente al 28.6% del grupo estudió menos de 5 horas, por lo que acá
+                está el principal inconveniente del porque este grupo tiene los promedios más bajos del resto.
+            </li>
+        </ul>
+      </section>
     </div>
 
-
-</body>
+    <footer>
+        <p>Desarrollado Por [Luis Sazo - Data Analyst]</p>
+        <p class="footer-extra">
+            Proyecto realizado con fines educativos
+        </p>
+    </footer>
+  </body>
 </html>
