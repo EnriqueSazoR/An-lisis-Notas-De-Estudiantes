@@ -1,5 +1,5 @@
-#📊 Análisis del Rendimiento Académico – Grupos A a E
-#📌 Descripción del Proyecto
+#📊Análisis del Rendimiento Académico – Grupos A a E
+#📌Descripción del Proyecto
 
 Este proyecto consiste en un análisis exploratorio de datos (EDA) sobre el rendimiento académico de cinco grupos de estudiantes (A, B, C, D y E) en las siguientes materias:
 
